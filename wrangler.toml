@@ -1,0 +1,19 @@
+name = "echo-surveys"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[triggers]
+crons = ["0 4 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "echo-surveys"
+database_id = "a0b91f24-a862-4597-97ae-370320b82258"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "7162b8c350224e92afa584c3efbffdd8"
+
+[[services]]
+binding = "ENGINE_RUNTIME"
+service = "echo-engine-runtime"
