@@ -17,3 +17,7 @@ id = "7162b8c350224e92afa584c3efbffdd8"
 [[services]]
 binding = "ENGINE_RUNTIME"
 service = "echo-engine-runtime"
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "echo_metrics"
