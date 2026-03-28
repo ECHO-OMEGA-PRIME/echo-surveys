@@ -61,6 +61,7 @@ app.use('*', async (c, next) => {
 });
 
 // Health
+app.get('/', (c) => c.redirect('/health'));
 app.get('/health', (c) => json(c, { status: 'ok', service: 'echo-surveys', version: '1.0.0', timestamp: new Date().toISOString() }));
 app.get('/status', (c) => json(c, { status: 'operational', service: 'echo-surveys', version: '1.0.0' }));
 
